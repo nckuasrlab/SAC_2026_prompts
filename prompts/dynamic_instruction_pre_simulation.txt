@@ -1,0 +1,11 @@
+Here are some design points you can refer:
+# Reference design point 1:
+number_of_cores = 6, core_frequency = 1.5, lidar_frequency = 7 $\rightarrow$ navigation_time = 505.43, car_trajecotory_normalized_score = 0.002868, control_command_issue_rates = 2.021, hardware_cost = 9
+
+# Reference design point 2:
+number_of_cores = 23, core_frequency = 1.5, lidar_frequency = 7 $\rightarrow$ navigation_time = 171.13, car_trajecotory_normalized_score = 0.002677, control_command_issue_rates = 7.11, hardware_cost = 34.5
+
+# Reference design point 3:
+number_of_cores = 18, core_frequency = 1.8, lidar_frequency = 7 $\rightarrow$ navigation_time = 165.04, car_trajecotory_normalized_score = 0.002615, control_command_issue_rates = 7.838, hardware_cost = 32.4
+
+Please predict the next design point for the next simulation and provide your reasoning.

@@ -1,0 +1,10 @@
+The navigation time is 165.04 seconds, and the control command issue rate is 7.838 Hz.
+Visual LLM: 
+(1) Yes, the car did reach the goal point (normalized deviation score: 0.003205); 
+(2) Image shows no zig-zag, jitter, or erratic behavior; 
+(3) Trajectory is stable/smooth/clean and remains within lane boundaries (including corners).
+Text LLM: 
+{"node_callback_latencies":{...,"663079":{"node_name":"ekf_localizer","avg_callback_latency_sec":0.000137,"max_callback_latency_sec":1.124935},...},
+"topic_publish_rates":{...,"/localization/pose_twist_fusion_filter/pose":0.316,...},
+"detected_issues":[...{"type":"frequency_bound","node_pid":663079,"slow_topic":"/localization/pose_twist_fusion_filter/pose","slow_hz":0.316,"fast_topic":"/perception/occupancy_grid_map/map_updates","fast_hz":135.008},...],
+"bottleneck_flags":["frequency_bound"]}

@@ -1,0 +1,1 @@
+I want to simulate a lane driving task and use the parkingslot map in simulation. The start point is (x: -4.97, y: -20.33) and goal point is (x: -9.47, y: -1.47), and then I would like the navigation time to be under 400 seconds. The simulation should also achieve a low trajectory deviation score and maintain efficient control command topic rates.

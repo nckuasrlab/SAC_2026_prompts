@@ -1,0 +1,10 @@
+Based on the profiling data, your primary bottlenecks are CPU-bound subscriber callbacks (especially in the behavior_velocity_planner chain) and an extremely low input frequency on the control_cmd topic (0.911 Hz).
+Increase CPU frequency from 1.2 GHz -> 1.8 GHz to accelerate segments (e.g., behavior planning) without incurring the thermal risks of 2.1 GHz.
+Keeping your LiDAR at 14 Hz preserves trajectory accuracy.
+
+Next design point: (16 cores, 1.8 GHz, 14 Hz LiDAR frequency)
+
+With 16 x 1.8 GHz you should see:
+- Navigation time: over 75% reduction (fewer callback stalls).
+- Normalized trajectory score improve or stay flat (sensor rate unchanged).
+- Control command issue rates increase from 0.91 Hz to over 3 Hz.

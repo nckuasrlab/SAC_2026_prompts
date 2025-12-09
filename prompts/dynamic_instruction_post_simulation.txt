@@ -1,0 +1,13 @@
+Here is the design point in simulation:
+- number_of_cores: 4
+- core_frequency: 1.2 GHz
+- LiDAR frequency: 14 Hz
+
+Here is the performance data after simulation:
+- navigation time: 1248.49 seconds
+- car trajecotory normalized score: 0.003092
+- control command issue rates: 0.911 Hz
+
+{Performance analysis from Deciphering Performance Data Agent}
+
+Please predict the next design point for the next simulation and provide your reasoning.
